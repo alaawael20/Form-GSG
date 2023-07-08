@@ -1,9 +1,9 @@
-import SignIn from "./Pages/SignIn";
+import GamersPage from "./Pages/GamersPage";
 
 function App() {
   return (
     <div>
-      <SignIn />
+      <GamersPage />
     </div>
   );
 }

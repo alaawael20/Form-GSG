@@ -33,7 +33,7 @@ class SignIn extends Component {
               <Inputs labelName="Enter your Password*" type="password" placeholder="•••••••••" imageSrc='/assets/Vector.svg'/>
               <div className="sign-btn">
                 <Button btnText="Login"/>
-                <p>Don't have an account? <span>Register</span></p>
+                <p>Don't have an account? <span onClick={this.props.togglePage}>Register</span></p>
               </div>
             </form>
           </div>
