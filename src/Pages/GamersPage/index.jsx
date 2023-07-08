@@ -4,19 +4,21 @@ import SignUp from './../SignUp/index';
 
 export default class GamersPage extends Component {
     state = {
-      isSignedIn: true
+      showSign: true
     }
-  
     togglePage = () => {
       this.setState((prevState) => ({
-        isSignedIn: !prevState.isSignedIn
+        showSign: !prevState.showSign
       }))
     }
-  
     render() {
       return (
         <div>
-          {this.state.isSignedIn ? (<SignIn togglePage={this.togglePage} />) : (<SignUp togglePage={this.togglePage} />)}
+          {
+            this.state.showSign ? 
+            (<SignIn togglePage={this.togglePage} />) : 
+            (<SignUp togglePage={this.togglePage} />)
+          }
         </div>
       )
     }
