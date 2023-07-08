@@ -6,13 +6,16 @@ import Inputs from '../../Components/Inputs';
 import Button from '../../Components/Button';
 
 class SignUp extends Component {
+  loadPrevent = (e) => {
+    e.preventDefault();
+  }
   render() {
     return (
       <div className='login-page'>
         {/** Left Section */}
         <div className="login-info-box">
-          <Logo logoImage="/assets/white-logo.svg"/>
-          <Paragraph cornerImage="/assets/corner-image.svg"/>
+          <Logo logoImage="/assets/white-logo.svg" />
+          <Paragraph cornerImage="/assets/corner-image.svg" />
         </div>
         {/** Right Section */}
         <div className="login-box">
@@ -26,18 +29,18 @@ class SignUp extends Component {
                 <h1>Register Individual Account!</h1>
                 <p>For the purpose of gamers regulation, your details are required.</p>
               </div>
-              <form action="">
-                <Inputs labelName="Username*" type="text" placeholder="Enter username" imageHidden/>
-                <Inputs labelName="Email address*" type="email" placeholder="Enter email address" imageHidden/>
-                <Inputs labelName="Phone*" type="text" placeholder="Enter phone" imageHidden/>
-                <Inputs labelName="Create Password*" type="password" placeholder="Password"  imageSrc='/assets/Vector.svg'/>
-                <Inputs labelName="Repeat password*" type="password" placeholder="Repeat password"  imageSrc='/assets/Vector.svg'/>
+              <form action="" onSubmit={this.loadPrevent}>
+                <Inputs labelName="Username*" type="text" placeholder="Enter username" imageHidden />
+                <Inputs labelName="Email address*" type="email" placeholder="Enter email address" imageHidden />
+                <Inputs labelName="Phone*" type="text" placeholder="Enter phone" imageHidden />
+                <Inputs labelName="Create Password*" type="password" placeholder="Password" imageSrc='/assets/Vector.svg' />
+                <Inputs labelName="Repeat password*" type="password" placeholder="Repeat password" imageSrc='/assets/Vector.svg' />
                 <div className='checkbox'>
-                  <input type="checkbox" id="checkbox" checked/>
+                  <input type="checkbox" id="checkbox" defaultChecked />
                   <label htmlFor="checkbox">I agree to terms & conditions</label>
                 </div>
                 <div className="register">
-                  <Button btnText="Register Account"/>
+                  <Button btnText="Register Account" />
                   <span></span>
                 </div>
                 <button className='btnStyle' onClick={this.props.togglePage}>login</button>

@@ -3,9 +3,9 @@ import "./style.css";
 
 class Button extends Component {
   render() {
-    const { btnText } = this.props;
+    const { btnText, preventReload } = this.props;
     return (
-      <button className='btnStyle'>{ btnText }</button>
+      <button className='btnStyle' onClick={preventReload}>{ btnText }</button>
     )
   }
 }
