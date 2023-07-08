@@ -5,7 +5,7 @@ import Paragraph from '../../Components/Paragraph';
 import Inputs from '../../Components/Inputs';
 import Button from '../../Components/Button';
 
-class LoginPage extends Component {
+class SignUp extends Component {
   render() {
     return (
       <div className='login-page'>
@@ -27,11 +27,11 @@ class LoginPage extends Component {
                 <p>For the purpose of gamers regulation, your details are required.</p>
               </div>
               <form action="">
-                <Inputs labelName="Username*" type="text" placeholder="Enter username"/>
-                <Inputs labelName="Email address*" type="email" placeholder="Enter email address"/>
-                <Inputs labelName="Phone*" type="text" placeholder="Enter phone"/>
-                <Inputs labelName="Create Password*" type="password" placeholder="Password"/>
-                <Inputs labelName="Repeat password*" type="password" placeholder="Repeat password"/>
+                <Inputs labelName="Username*" type="text" placeholder="Enter username" imageHidden/>
+                <Inputs labelName="Email address*" type="email" placeholder="Enter email address" imageHidden/>
+                <Inputs labelName="Phone*" type="text" placeholder="Enter phone" imageHidden/>
+                <Inputs labelName="Create Password*" type="password" placeholder="Password"  imageSrc='/assets/Vector.svg'/>
+                <Inputs labelName="Repeat password*" type="password" placeholder="Repeat password"  imageSrc='/assets/Vector.svg'/>
                 <div className='checkbox'>
                   <input type="checkbox" id="checkbox" checked/>
                   <label htmlFor="checkbox">I agree to terms & conditions</label>
@@ -50,4 +50,4 @@ class LoginPage extends Component {
   }
 }
 
-export default LoginPage;
+export default SignUp;

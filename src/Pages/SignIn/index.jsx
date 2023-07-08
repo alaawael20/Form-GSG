@@ -5,7 +5,7 @@ import Paragraph from '../../Components/Paragraph';
 import Inputs from '../../Components/Inputs';
 import Button from '../../Components/Button';
 
-class SignPage extends Component {
+class SignIn extends Component {
   render() {
     return (
       <div className='signUp-page'>
@@ -29,8 +29,8 @@ class SignPage extends Component {
               <span></span>
             </div>
             <form action="">
-              <Inputs labelName="Your email" type="email" placeholder="Write your email"/>
-              <Inputs labelName="Enter your Password*" type="password" placeholder="Write your password"/>
+              <Inputs labelName="Your email" type="email" placeholder="Write your email" imageHidden/>
+              <Inputs labelName="Enter your Password*" type="password" placeholder="•••••••••" imageSrc='/assets/Vector.svg'/>
               <div className="sign-btn">
                 <Button btnText="Login"/>
                 <p>Don't have an account? <span>Register</span></p>
@@ -43,4 +43,4 @@ class SignPage extends Component {
   }
 }
 
-export default SignPage;
+export default SignIn;

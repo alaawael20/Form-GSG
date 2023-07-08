@@ -1,11 +1,9 @@
-import LoginPage from "../src/Pages/LoginPage";
-// import SignPage from "./Pages/SignPage";
+import SignIn from "./Pages/SignIn";
 
 function App() {
   return (
     <div>
-      <LoginPage /> 
-      {/*<SignPage />*/}
+      <SignIn />
     </div>
   );
 }
