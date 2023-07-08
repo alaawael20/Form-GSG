@@ -1,0 +1,33 @@
+.input-text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input-text label {
+  color: #696F79;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.input-text input {
+  font-size: 18px;
+  padding: 23px 30px 24px;
+  border-radius: 6px;
+  border: 1px solid #8692A6;
+  margin-bottom: 24px;
+}
+
+.input-text input::placeholder {
+  color: #8692A6;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.input-text input:focus {
+  outline: none;
+}
