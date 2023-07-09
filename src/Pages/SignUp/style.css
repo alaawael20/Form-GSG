@@ -155,3 +155,9 @@
   background-color: #FFF;
   box-shadow: 0 3px 13px #ddd;
 }
+
+form .error {
+  font-size: 18px;
+  color: red;
+  margin: -20px 0 15px 15px;
+}
